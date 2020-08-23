@@ -1,0 +1,46 @@
+.photos-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 5rem;
+
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .actions {
+      display: flex;
+    }
+
+    .btn {
+      position: relative;
+      margin-right: 2rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0.8rem;
+        bottom: 0.8rem;
+        right: -2.5rem;
+        width: 2px;
+        background: #333;
+      }
+    }
+
+    .btn--upload {
+      padding-left: 2.5rem;
+    }
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+  }
+}
+
+.photos-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1rem;
+}

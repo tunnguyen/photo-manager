@@ -1,0 +1,1 @@
+export const DEFAULT_SHOWING_ITEMS = 25;

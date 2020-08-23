@@ -1,0 +1,45 @@
+.selector {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  min-width: 6rem;
+
+  &__current {
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0.7rem;
+      right: 0;
+      transform: rotate(45deg);
+      width: 0.6rem;
+      height: 0.6rem;
+      border-right: 2px solid #333;
+      border-bottom: 2px solid #333;
+    }
+  }
+
+  &__options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 100%;
+    padding: 0.5rem 1rem;
+    z-index: 99;
+    text-align: center;
+    box-shadow: 0 1px 3px #999;
+
+    &.displayed {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .btn {
+      padding: 0.3rem;
+    }
+  }
+}

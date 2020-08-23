@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.heading-title {
+  font-size: 3rem;
+}
+
+@import './scss/general.scss';
+@import './scss/components/PhotosContainer.scss';
+@import './scss/components/Photo.scss';
+@import './scss/components/Selector.scss';
+@import './scss/components/UploadModal.scss';
